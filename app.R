@@ -14,6 +14,8 @@ library(plotly)
 data <-
   readRDS("miniproject_data.rds")
 
+data$time <- lubridate::ymd(data$time)
+
 sidebar <- dashboardSidebar(
   menuItem("Utsjoki", tabName = "utsjoki", icon = icon("dashboard")),
   menuItem("Jyväskylä", tabName = "jyvaskyla", icon = icon("th"))
@@ -34,7 +36,8 @@ body <- dashboardBody(# Boxes need to be put in a row (or column)
                   start = min(data$time),
                   end   = max(data$time),
                   min = min(data$time),
-                  max = max(data$time)
+                  max = max(data$time),
+                  format = "yyyy/mm/dd"
                 )
               )
             ),
