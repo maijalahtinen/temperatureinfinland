@@ -12,7 +12,7 @@ library(shinydashboard)
 library(plotly)
 
 data <-
-  readRDS("~/Documents/Introduction to Data Science/miniprojekti/temperatureinfinland/miniproject_data.rds")
+  readRDS("miniproject_data.rds")
 
 sidebar <- dashboardSidebar(
   menuItem("Utsjoki", tabName = "utsjoki", icon = icon("dashboard")),
