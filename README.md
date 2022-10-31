@@ -1,3 +1,3 @@
-# temperatureinfinland
+# temperaturesinfinland
 
-School project: Helsinki University course
+Project for Helsinki University course: Introduction to Data Science
