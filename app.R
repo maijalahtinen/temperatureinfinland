@@ -12,6 +12,7 @@ library(shiny)
 library(shinydashboard)
 library(plotly)
 library(ggplot2)
+library(prophet)
 
 data <-
   readRDS("miniproject_data.rds")
